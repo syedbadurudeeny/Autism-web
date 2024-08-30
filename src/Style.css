@@ -1,0 +1,33 @@
+
+
+
+/* study module */
+
+
+.active{
+    display: block;
+}
+.story{
+    cursor: pointer;
+}
+.hidden{
+    display: none;
+}
+
+/* iframe */
+.iframe{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.close-icon{
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+}

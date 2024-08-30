@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/autism-web/static/css/main.a65f92a8.css",
-    "main.js": "/autism-web/static/js/main.2005810b.js",
+    "main.js": "/autism-web/static/js/main.9505b835.js",
     "index.html": "/autism-web/index.html",
     "main.a65f92a8.css.map": "/autism-web/static/css/main.a65f92a8.css.map",
-    "main.2005810b.js.map": "/autism-web/static/js/main.2005810b.js.map"
+    "main.9505b835.js.map": "/autism-web/static/js/main.9505b835.js.map"
   },
   "entrypoints": [
     "static/css/main.a65f92a8.css",
-    "static/js/main.2005810b.js"
+    "static/js/main.9505b835.js"
   ]
 }

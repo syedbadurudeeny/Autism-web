@@ -1,6 +1,7 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import { IoMdClose } from "react-icons/io";
+import axios from "axios";
 
 function CommunicationHighModule(){
 
@@ -10,6 +11,14 @@ function CommunicationHighModule(){
         },
         {
             video2 : "RiYzD1h-YVQ"
+        },
+        {
+          //emotion video
+          video3 : "jetoWelJJJk"
+        },
+        {
+          //emotion video
+          video4 : "MeNY-RxDJig"
         }
     ]
 
@@ -25,17 +34,25 @@ function CommunicationHighModule(){
             setVideo(datas[1]?.video2)
             setIsvisible(true);
         }
+        if(number === 3){
+          setVideo(datas[2]?.video3)
+          setIsvisible(true);
+        }
+        if(number === 4){
+          setVideo(datas[3]?.video4)
+          setIsvisible(true);
+        }
     }
 
     function handleClose(){
         setIsvisible(false)
     }
 
-    const [transcript,setTranscript] = useState('');
+    const [transcript,setTranscript] = useState();
     const [isListening,setIsListening] = useState(false);
     const [recognition,setRecognition]= useState(null);
 
-
+    
     useEffect(()=>{
 
         const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
@@ -96,6 +113,7 @@ function CommunicationHighModule(){
                 <li><Link to={"/study/module"} >StudyModule</Link></li>
                 <li><Link to={"/communication/low/module"} >CommunicationLowModule</Link></li>
                 <li><Link to={"/communication/high/module"} >CommunicationHighModule</Link></li>
+                <li><Link to={"/test/module"} >TestModule</Link></li>
             </ul>
         </nav>
        </header>
@@ -118,6 +136,7 @@ function CommunicationHighModule(){
                     <img src="/algebra.jpg" alt="loading..." width={200} height={200} />
                     <button onClick={()=>handleWatch(2)}>Watch Now</button>
                 </div>
+                <br/>
         </article>
         <br/>
         <article>
@@ -129,6 +148,18 @@ function CommunicationHighModule(){
                 <div>
                   <button onClick={isListening ? stopListening : startListening}>{isListening ? 'Stop Listening' : 'Start Listening'}</button>
                   <p>{transcript}</p>
+                </div>
+        </article>
+        <br/>
+        <article>
+        <div>
+                    <img src="/algebra.jpg" alt="loading..." width={200} height={200} />
+                    <button onClick={()=>handleWatch(3)}>Watch Now</button>
+                </div>
+                <br/>
+                <div>
+                    <img src="/algebra.jpg" alt="loading..." width={200} height={200} />
+                    <button onClick={()=>handleWatch(4)}>Watch Now</button>
                 </div>
         </article>
        </main> : 

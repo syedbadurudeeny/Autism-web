@@ -56,7 +56,7 @@ function StudyModule(){
         }
 
         // console.log(noteTime)
-        if(note == "AM" && noteTime == "12"){
+        if(note == "PM" && noteTime == "11"){
             let updateCheck = check;
             
             if(updateCheck.checkbox1.checked){
@@ -112,9 +112,11 @@ function StudyModule(){
                 <li><Link to={"/study/module"} >StudyModule</Link></li>
                 <li><Link to={"/communication/low/module"} >CommunicationLowModule</Link></li>
                 <li><Link to={"/communication/high/module"} >CommunicationHighModule</Link></li>
+                <li><Link to={"/test/module"} >TestModule</Link></li>
             </ul>
         </nav>
        </header>
+       <br/>
         <main>
             {/* low level autism study module */}
            <section className="low-level-autism-study-module">

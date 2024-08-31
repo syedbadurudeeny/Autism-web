@@ -8,6 +8,7 @@ import StudyModule from "./StudyModule";
 import './Style.css';
 import CommunicationLowModule from "./CommunicationLow";
 import CommunicationHighModule from "./CommunicationHigh";
+import TestModule from "./TestModule";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Route path="/study/module" element={<StudyModule/>} />
       <Route path="/communication/low/module" element={<CommunicationLowModule/>} />
       <Route path="/communication/high/module" element={<CommunicationHighModule/>} />
+      <Route path="/test/module" element={<TestModule/>} />
     </Routes>
     </>
   );

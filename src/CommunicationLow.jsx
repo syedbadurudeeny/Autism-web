@@ -78,6 +78,7 @@ function CommunicationLowModule(){
                 <li><Link to={"/survey"} >Survey</Link></li>
                 <li><Link to={"/study/module"} >StudyModule</Link></li>
                 <li><Link to={"/communication/low/module"} >CommunicationLowModule</Link></li>
+                <li><Link to={"/test/module"} >TestModule</Link></li>
             </ul>
         </nav>
     </header>
